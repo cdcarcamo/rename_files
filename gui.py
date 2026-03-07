@@ -15,4 +15,13 @@ class App:
         create_title = tk.Label(selft.root, text="Renombrador de archivos", font=("Arial", 16))
         create_title.pack(pady=10)
 
+        tk.Label(selft.root, text="Nombre base").pack()
+
+        selft.nombre_base = tk.Entry(selft.root)
+        selft.nombre_base.pack()
+
+        tk.Label(selft.root, text="Número inicial").pack()
+
+        selft.numero_inicial = tk.Entry(selft.root)
+        selft.numero_inicial.pack()
 
