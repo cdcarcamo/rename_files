@@ -26,11 +26,16 @@ class App:
         selft.numero_inicial = tk.Entry(selft.root)
         selft.numero_inicial.pack()
 
-        button_carpeta = tk.Button(
+        button_file = tk.Button(
             selft.root,
             text="Seleccionar carpeta",
-            command=selft.seleccionar_carpeta
+            command=selft.file_selection
         )
 
-        button_carpeta.pack(pady=10)
+        button_file.pack(pady=10)
+
+    def file_selection(self):
+
+        self.file = filedialog.askdirectory()
+        print(self.file)
 
