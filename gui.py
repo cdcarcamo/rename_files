@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import filedialog
+from renamer import rename_file
 
 class App:
 
@@ -46,5 +47,13 @@ class App:
 
         self.file = filedialog.askdirectory()
         print(self.file)
+    
+    def execute(selft):
+
+        name = selft.nombre_base.get()
+
+        initation = int(selft.numero_inicial.get())
+
+        rename_file(selft.file, name, initation)
 
         
