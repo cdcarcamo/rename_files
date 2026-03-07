@@ -8,7 +8,7 @@ class App:
         selft.root.title("Renombrar archivos")
         selft.root.geometry("500x300")
 
-        selft.create_widgets()
+        selft.create_widgates()
     
     def create_widgates(selft):
 
