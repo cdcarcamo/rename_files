@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import filedialog
 
 class App:
 
@@ -24,4 +25,12 @@ class App:
 
         selft.numero_inicial = tk.Entry(selft.root)
         selft.numero_inicial.pack()
+
+        button_carpeta = tk.Button(
+            selft.root,
+            text="Seleccionar carpeta",
+            command=selft.seleccionar_carpeta
+        )
+
+        button_carpeta.pack(pady=10)
 
