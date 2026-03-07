@@ -34,8 +34,17 @@ class App:
 
         button_file.pack(pady=10)
 
+        button_rename = tk.Button(
+            selft.root,
+            text="Renombrar archivos",
+            command=selft.execute
+        )
+
+        button_rename.pack(pady=20)
+
     def file_selection(self):
 
         self.file = filedialog.askdirectory()
         print(self.file)
 
+        
