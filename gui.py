@@ -24,8 +24,8 @@ class App:
 
         tk.Label(selft.root, text="Número inicial").pack()
 
-        selft.numero_inicial = tk.Entry(selft.root)
-        selft.numero_inicial.pack()
+        selft.start_number = tk.Entry(selft.root)
+        selft.start_number.pack()
 
         button_file = tk.Button(
             selft.root,
@@ -52,7 +52,7 @@ class App:
 
         name = selft.nombre_base.get()
 
-        initation = int(selft.numero_inicial.get())
+        initation = int(selft.start_number.get())
 
         rename_file(selft.file, name, initation)
 
